@@ -1,0 +1,5 @@
+/bin/
+kowari
+*.exe
+.env
+.DS_Store
