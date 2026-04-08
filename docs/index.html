@@ -251,6 +251,8 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
   document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  // safety: ensure anything still hidden after 2s shows up (print/screenshot/unsupported IO)
+  setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach(el => el.classList.add('in')), 2000);
 </script>
 </body>
 </html>
