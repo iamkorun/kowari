@@ -1,6 +1,8 @@
 # 🐨 kowari
 
-> Offline-first TUI webhook receiver. Catches, inspects, and replays HTTP hooks — all from your terminal.
+> Catch webhooks locally. No cloud. No leaks. A terminal webhook receiver that never phones home.
+
+**[→ kowari.dev landing page](https://iamkorun.github.io/kowari)**
 
 [![Go](https://img.shields.io/badge/go-1.21+-00ADD8.svg)](https://golang.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
