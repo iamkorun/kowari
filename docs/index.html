@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="light" />
 <title>kowari 🐨 — catch webhooks locally</title>
 <meta name="description" content="Offline-first TUI webhook receiver. Catch, inspect, and replay HTTP hooks from your terminal. No cloud, no account, no leaks." />
 <meta property="og:title" content="kowari — catch webhooks locally" />
@@ -54,9 +55,9 @@
   }
   .hard-border { border: 1.5px solid #1C1A17; }
   .pill-shadow { box-shadow: 4px 4px 0 #1C1A17; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #1C1A17; color: #FAF7F2; }
-  }
+  /* Landing page is light-only by design (warm palette). Lock scheme so
+     browsers do not auto-invert form controls or scrollbars in OS dark mode. */
+  :root { color-scheme: light; }
 </style>
 </head>
 <body class="antialiased">
